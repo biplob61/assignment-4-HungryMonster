@@ -1,6 +1,4 @@
-
-
-
+//input handler
 function inputHandler(){
     const searchButton = document.getElementById("search-button");
 searchButton.addEventListener("click",function(){
@@ -9,26 +7,22 @@ searchButton.addEventListener("click",function(){
     console.log(inputArea);
 })
 }
-
+//meallist handler
 fetch('https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast')
 .then(response => response.json())
-.then(data => display(data))
+.then(data => displayMeal(data))
 
-
-
-const display = mealNames=>{
+const displayMeal = mealNames=>{
     const mealList = mealNames.meals
     const div = document.getElementById("mealNames");
-    // console.log(mealList);
     for (let i = 0; i < mealList.length; i++) {
         const meal = mealList[i];
-        const li = document.createElement('li');
-        li.innerText = meal.strMeal;
-        div.appendChild(li);
-        //console.log(meal.strMeal);
+        const mealDiv = document.createElement('div');
+        mealDiv.className = 'mealContainer';
+        mealDiv.innerText = meal.strMeal;
+        div.appendChild(mealDiv);
         
     }
-
 }
 
 

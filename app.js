@@ -3,7 +3,9 @@ function inputHandler(){
     const searchButton = document.getElementById("search-button");
 searchButton.addEventListener("click",function(){
     const inputArea = document.getElementById("input-area").value;
-    console.log(inputArea);
+    console.log("captured the input",inputArea);
+    const  mealArea = document.getElementById('mealArea');
+    mealArea.style.display = "block";
 })
 }
 
@@ -36,6 +38,8 @@ const displayMealDetails =meal =>{
     .then(data =>renderFoodInfo(data.meals[0]));
 }
 
+
+//more information handler
 const renderFoodInfo = meal =>{
     const detailsDiv = document.getElementById('mealdetails');
     detailsDiv.innerHTML= `

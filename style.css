@@ -27,3 +27,6 @@
 #mealdetails img{
     width: 50%;
 }
+#mealArea{
+    display: none;
+}

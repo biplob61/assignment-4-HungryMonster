@@ -1,0 +1,12 @@
+#search-area{
+    margin: auto;
+    width: 35%;
+    padding: 3%;
+}
+#input-area{
+    border-radius: 5px;
+}
+#search-button{
+    background-color: green;
+    border-radius: 5px;
+}

@@ -26,20 +26,5 @@ const displayMeal = mealNames=>{
     }
 }
 
-// function displayMealHandler(){
-//     const displayMeal = mealNames=>{
-//         const mealList = mealNames.meals
-//         const div = document.getElementById("mealNames");
-//         for (let i = 0; i < mealList.length; i++) {
-//             const meal = mealList[i];
-//             const mealDiv = document.createElement('div');
-//             mealDiv.className = 'mealContainer';
-//             mealDiv.innerText = meal.strMeal;
-//             div.appendChild(mealDiv);
-            
-//         }
-//     }
-//     return displayMealHandler
-// }
 
 
